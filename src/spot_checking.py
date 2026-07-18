@@ -101,7 +101,7 @@ def plot_spot_check_boxplot(results_raw_mae: dict) -> None:
     plt.figure(figsize=(10, 6))
     plt.boxplot(
         [results_raw_mae[m] for m in results_raw_mae.keys()],
-        labels=list(results_raw_mae.keys()),
+        label=list(results_raw_mae.keys()),
         showmeans=True,
     )
     plt.title("Spot-checking: Comparação de Modelos (Regressão)")
